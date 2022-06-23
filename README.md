@@ -19,6 +19,8 @@ Using Excel, VBA code was used to develop a routine to calculate the Total Daily
 ## Summary
 Below is a summary of the VBA code execution times for Unfactored vs. Factored for both years 2017 and 2018. Notice that the Factored code runs in half the time as the previous unfactored code. 
 
+![Summary of Execution Times](resources/Unfactored_vs_Factored_Summary.PNG)
+
 Refactoring code is the process of reviewing previously developed code into more efficient, and possibly more robust code. The result is typically faster runtimes, and code that is easily able to handle many more or all types of incoming data conditions. A developer is able to review with fresh eyes and see different perspectives to constructor or deconstruct the code into more efficient processes. For this project, the refactored code was faster, but it removed verification conditional statement that could lead to erroneous data.
 
 One of the major differences between the two codes is the choice as to when to update the "All Stocks Analysis" sheet. In the previous unfactored code, the "All Stocks Analysis" sheet is activated 12 times in order to update the ticker, total volume and return %. In the factored code, this section has been pulled out until all the data has been collected into new arrays. The activation of the "All Stocks Analysis" sheet is only activated once. 
